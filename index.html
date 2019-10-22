@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Free online todo list tracker">
+
     <title>Free Online ToDo List</title>
 </head>
 <body>
     <h1>ToDo List</h1>
+    <form>
+        <input type="text" placeholder="title"
+            name="title" id="title">
+        <br>
+        <input type="text" placeholder="deadline"
+            aria-placeholder="Enter a date for when a task is due"
+            name="deadline" id="deadline">
+        <br>
+        <input type="checkbox"> IsComplete?
+        <br>
+        <input type="button" value="Add ToDo">
+    </form>
+    <div id="todo">
+
+    </div>
+    <div id="completed">
+
+    </div>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
