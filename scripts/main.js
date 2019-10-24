@@ -22,7 +22,7 @@ function main() {
  */
 function markAsComplete() {
     var currItem = this;
-    var completedItems = document.getElementById("completed;");
+    var completedItems = document.getElementById("completed");
     completedItems.appendChild(currItem);
 }
 /**
@@ -33,7 +33,7 @@ function displayToDoItem(item) {
     var div = document.createElement("div");
     div.onclick = markAsComplete;
     console.log(div);
-    div.innerHTML = '<input type ="checkbox"> ' + item.title;
+    div.innerHTML = '<input type ="checkbox">' + item.title;
     var displayDiv = document.getElementById("todo");
     displayDiv.appendChild(div);
 }

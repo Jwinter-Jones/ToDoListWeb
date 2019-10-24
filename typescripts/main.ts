@@ -46,7 +46,7 @@ function displayToDoItem(item:ToDoItem):void{
     div.onclick = markAsComplete;
 
     console.log(div);
-    div.innerHTML = '<input type ="checkbox"> ' + item.title;
+    div.innerHTML = '<input type ="checkbox">' + item.title;
     let displayDiv = document.getElementById("todo");
     displayDiv.appendChild(div);
 
