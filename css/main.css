@@ -1,0 +1,39 @@
+div#todo, div#completed{
+    border-radius: .2em;
+    box-sizing: border-box;
+    padding: .3em;
+}
+
+div#todo{
+    border: 1px solid black;
+    width: 48%;
+    float: left;
+    background-color: lightblue;
+    margin-right: 2%;
+
+}
+
+div#completed{
+    float: right;
+    width: 50%;
+    border: 1px solid darkgreen;
+    background-color: lightgray;
+}
+
+@media only screen and (max-width: 600){
+    body{
+        background-color: green;
+    }
+
+    div#todo{
+        float: none;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    div#completed{
+        float: none;
+        width: 100%;
+        margin-top: 1em;
+    }
+}
