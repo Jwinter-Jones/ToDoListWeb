@@ -18,6 +18,8 @@ div#completed{
     width: 50%;
     border: 1px solid darkgreen;
     background-color: lightgray;
+    text-decoration: line-through;
+    opacity: .5;
 }
 
 @media only screen and (max-width: 600){
