@@ -7,7 +7,17 @@ var ToDoItem = /** @class */ (function () {
     }
     return ToDoItem;
 }());
-var myItem = new ToDoItem("Finish Class");
+/* Test ode here...*/
+var myItem = new ToDoItem("Learn about cookies=;");
+myItem.isCompleted = false;
+// OCtober 29th 2019. Month starts at 0
+myItem.deadline = new Date(2019, 9, 29);
+// stringify converts any object into a JSON string format
+var strData = JSON.stringify(myItem);
+console.log(strData);
+// Setting a cookie called 'todoitems' that expires in a week
+Cookies.set("todoitems", strData, { expires: 7 });
+/* END TEST CODE */
 window.onload = function () {
     var addBtn = document.querySelector("form > input[type=button]");
     addBtn.onclick = main;
