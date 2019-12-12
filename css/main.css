@@ -1,3 +1,7 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
 div#todo, div#completed{
     border-radius: .2em;
     padding: .3em;
@@ -37,4 +41,35 @@ div#completed{
         width: 100%;
         margin-top: 1em;
     }
+}
+
+#title{
+    display: block;
+    width: 25%;
+    margin-bottom: 3em;
+    position: relative;
+    left: 7in;
+}
+
+#deadline{
+    display: inline-block;
+    width: 25%;
+    margin-bottom: 3em;
+    position: relative;
+    left: 7in;
+}
+
+body{
+    background-color: grey;
+}
+
+h1{
+    position: relative;
+    left: 9in;
+}
+
+form :last-child{
+    position: relative;
+    left: 9in;
+    margin-bottom: 1in;
 }
