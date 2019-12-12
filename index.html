@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Free online todo list tracker">
+    <meta name="Description" content="Free online todo list tracker. Manage todos free online">
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
-
     <title>Free Online ToDo List</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
             name="title" id="title">
         <br>
         <input type="text" placeholder="deadline"
-            aria-placeholder="Enter a date for when a task is due"
+            aria-placeholder="Enter a date task is due"
             autocomplete="off"
             name="deadline" id="deadline">
         <br>
@@ -26,7 +26,7 @@
         <input type="button" value="Add ToDo">
     </form>
     <div id="todo">
-
+        
     </div>
     <div id="completed">
 
@@ -35,6 +35,10 @@
     <script src="scripts/js.cookie.js"></script>
     <script src="scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
-    <script>var picker = new Pikaday({ field: document.getElementById('deadline') });</script>
+    <script>
+        var picker = new Pikaday({ 
+            field: document.getElementById('deadline') 
+        });
+    </script>
 </body>
 </html>
